@@ -1,0 +1,19 @@
+noclone — what a copier can and can't do
+==============================================
+
+[1] the basis cloner (clones |0> and |1> perfectly)
+    input |0> -> fidelity with ideal clone: 1.000000
+    input |1> -> fidelity with ideal clone: 1.000000
+    input |+> -> fidelity with ideal clone: 0.500000
+    |+> output == Bell state exactly: True
+    |+> output: source reduced-state purity = 0.500000 (0.5 = maximally mixed = entangled, not copied)
+
+[2] the optimal universal cloner (Buzek-Hillery, 1996)
+    map is a genuine unitary: True
+    400 random inputs: mean fidelity copy A = 0.833333, copy B = 0.833333
+    the ceiling: 5/6 = 0.833333 — no unitary copier beats it on average
+
+the theorem, in one line:
+  a unitary that clones |0> and |1> is forced by linearity to turn
+  |+> into entanglement instead of a copy. the unknown can't be taken
+  by duplication — only witnessed, never seized.
